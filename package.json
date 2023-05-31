@@ -19,10 +19,11 @@
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@electron/remote": "^2.0.9",
     "babel-loader": "^8.1.0",
     "bluebird": "^3.7.2",
     "bluebird-extra": "^2.0.0",
-    "electron": ">=12.0.0",
+    "electron": ">=12.0.0 <23.0.0",
     "electron-default-menu": "^1.0.2",
     "filesize": "^6.1.0",
     "format-number": "^3.0.0",
@@ -35,7 +36,8 @@
     "webpack-cli": "^3.3.12"
   },
   "peerDependencies": {
-    "electron": ">=12.0.0"
+    "electron": ">=12.0.0 <23.0.0",
+    "@electron/remote": "^2.0.0"
   },
   "dependencies": {
     "electron-process-reporter": "^1.4.0"
