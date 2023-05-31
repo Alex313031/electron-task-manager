@@ -1,14 +1,16 @@
 {
-  "name": "@syed_umair/electron-process-manager",
-  "version": "1.0.8",
-  "description": "Process manager UI for Electron applications",
+  "name": "electron-task-manager",
+  "version": "1.0.9",
+  "description": "Process manager UI for Electron applications.",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack -d --watch",
     "build": "webpack",
     "example": "npm run build && electron example",
     "test": "npm run build && node tests/test.js",
-    "prepare": "npm run build"
+    "prepare": "npm run build",
+    "clean": "rimraf node_modules",
+    "distclean": "rimraf dist && rimraf node_modules"
   },
   "author": "Syed Umair",
   "license": "MIT",
@@ -20,19 +22,20 @@
     "babel-loader": "^8.1.0",
     "bluebird": "^3.7.2",
     "bluebird-extra": "^2.0.0",
-    "electron": "^21.1.0",
-    "electron-default-menu": "1.0.2",
+    "electron": ">=12.0.0",
+    "electron-default-menu": "^1.0.2",
     "filesize": "^6.1.0",
     "format-number": "^3.0.0",
     "object-path": "^0.11.4",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "rimraf": "3.0.2",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   },
   "peerDependencies": {
-    "electron": "^17.3.0"
+    "electron": ">=12.0.0"
   },
   "dependencies": {
     "electron-process-reporter": "^1.4.0"

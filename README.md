@@ -1,4 +1,4 @@
-# Process Manager UI for Electron Apps
+# Task Manager for Electron Apps
 
 This package provides a process manager UI for Electron applications.
 
@@ -13,7 +13,7 @@ For versions `>=7.x`, use latest.
 
 It can be useful to debug performance of an app with several `webview`.
 
-It's inspired from Chrome's task manager.
+It is inspired from Chromium's task manager.
 
 ## Features
 
@@ -34,7 +34,7 @@ $ npm install @syed_umair/electron-process-manager
 
 ## Usage
 ```js
-const { openProcessManager } = require('electron-process-manager');
+const { openProcessManager } = require('electron-task-manager');
 
 openProcessManager();
 ```
